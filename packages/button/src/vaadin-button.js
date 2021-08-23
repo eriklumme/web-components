@@ -53,10 +53,7 @@ class Button extends ControlStateMixin(ActiveMixin(ElementMixin(ThemableMixin(Po
           border: none;
           box-shadow: none;
           outline: none;
-          font-family: inherit;
-          font-size: inherit;
-          font-weight: inherit;
-          line-height: inherit;
+          font: inherit;
           color: inherit;
           text-transform: inherit;
           letter-spacing: inherit;
