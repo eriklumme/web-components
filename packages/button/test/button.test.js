@@ -14,9 +14,7 @@ import {
   touchstart
 } from '@vaadin/testing-helpers';
 import { FlattenedNodesObserver } from '@polymer/polymer/lib/utils/flattened-nodes-observer.js';
-import { Button } from '../vaadin-button.js';
-
-customElements.define(Button.is, Button);
+import '../vaadin-button.js';
 
 describe('vaadin-button', () => {
   let element;
@@ -35,10 +33,6 @@ describe('vaadin-button', () => {
 
     it('should have a valid static "is" getter', () => {
       expect(customElements.get(tagName).is).to.equal(tagName);
-    });
-
-    it('should have a valid version number', () => {
-      expect(customElements.get(tagName).version).to.match(/^(\d+\.)?(\d+\.)?(\d+)(-(alpha|beta|rc)\d+)?$/);
     });
   });
 
